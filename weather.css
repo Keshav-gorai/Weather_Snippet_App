@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(540deg, #358cd8, #12bd5c) no-repeat;
+}
+
+.container{
+    width: 450px;
+    height: min-content;
+    background-color:  rgb(52, 177, 226);
+    border-radius: 12px;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: center;
+}
+
+.search-box input {
+    width: 90%;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color:rgb(214, 143, 55);
+    padding: 9px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.search-box input::placeholder {
+    color: black;
+}
+
+
+
+.abs {
+    color: black;
+    font-size: 24px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.weather-zone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:5px;
+}
+
+.weather-zone img{
+    width: 70%;
+}
+
+.weather-zone .temperature{
+    padding: 30px 0px 0px 0px;
+    font-size: 35px;
+    font-weight: 1000;
+    position: relative;
+}
+.weather-zone .temperature sup{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.weather-zone .weather-report{
+    font-size: 25px;
+    font-weight: 600px;
+    align-items: center;
+    text-transform: capitalize;
+
+}
+
+.weather-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.weather-details i{
+    font-size: 35px;
+    
+}
+
+.humidity , .wind{
+    display: flex;
+    padding: 20px 5px;
+    align-items: center;
+}
+.humidity{
+    margin-left: 15px;
+}
+
+.wind{
+    margin-right: 15px;
+}
+
+.weather-details .text{
+    font-size: 17px;
+    margin-left: 10px;
+}
+.text span{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+
+.location-not-found {
+    display: none;
+    flex-direction: column;
+    margin: 15px 0px 10px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-not-found img{
+    width: 70%;
+    align-items: center;
+}
+
+.location-not-found h1 {
+    font-size: 25px;
+    color: rgba(6, 66, 68, 0.845);
+    
+    margin: 15px 0px 10px 0px;
+}
